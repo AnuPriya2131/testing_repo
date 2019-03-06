@@ -19,6 +19,8 @@
   tasks:
     - name: Deploy ARM template
       azure_rm_deployment:
+        subscription_id: 4ff8750b-e2fa-4db8-84c8-86abd50d3868
+        resource_group_name: sangam
         location: "eastus2"
         state: present
         parameters: 
