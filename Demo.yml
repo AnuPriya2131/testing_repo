@@ -6,7 +6,7 @@
     - name: Create Azure Deploy
       azure_rm_deployment:
         state: present
-        resource_group_name: dev-ops-cle
+        resource_group_name: sangam
         template_link: 'https://raw.githubusercontent.com/AnuPriya2131/testing_repo/master/BigData/maindeploy.json'
 
 
