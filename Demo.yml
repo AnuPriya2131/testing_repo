@@ -23,25 +23,25 @@
         state: present
         parameters: 
           dataFactoryName: 
-            value: "{{ var_dataFactoryName }}"
+            value: "{{ dataFactoryName }}"
           Storagekey: 
-            value: "{{ var_Storagekey }}"
+            value: "{{ Storagekey }}"
           spkey: 
-            value: "{{ var_spkey }}"
+            value: "{{ spkey }}"
           servicePrincipalId: 
-            value: "{{ var_servicePrincipalId }}"
+            value: "{{ servicePrincipalId }}"
           hostSubscriptionId: 
-            value: "{{ var_hostSubscriptionId }}"
+            value: "{{ hostSubscriptionId }}"
           tenant: 
-            value: "{{ var_tenant }}"
+            value: "{{ tenant }}"
           ClusterUserName: 
-            value: "{{ var_ClusterUserName }}"
+            value: "{{ ClusterUserName }}"
           ClusterPassword: 
-            value: "{{ var_ClusterPassword }}"
+            value: "{{ ClusterPassword }}"
           sqlseverkey: 
-            value: "{{ var_sqlseverkey }}"
+            value: "{{ sqlseverkey }}"
           environment: 
-            value: "{{ var_environment }}"
+            value: "{{ environment }}"
           resourcesgpname: 
-            value: "{{ var_resourcesgpname }}"                 
+            value: "{{ resourcesgpname }}"                 
         template_link: "https://raw.githubusercontent.com/sangaml/testing_repo/master/BigData/maindeploy.json"
