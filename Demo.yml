@@ -24,7 +24,6 @@
         tenant: c160a942-c869-429f-8a96-f8c8296d57db
         secret: qaEbeMNs2mNxacfqDrez24/TwVgQVyPKL8rjTtd0VA4=
         resource_group_name: sangam
-        environment: Production
         location: "eastus2"
         state: present
         parameters: 
@@ -47,5 +46,7 @@
           sqlseverkey: 
             value: "{{ sqlseverkey }}"
           resourcesgpname: 
-            value: "{{ resourcesgpname }}"                 
+            value: "{{ resourcesgpname }}"
+          environment:
+            value: "{{ production }}"
         template_link: "https://raw.githubusercontent.com/sangaml/testing_repo/master/BigData/maindeploy.json"
