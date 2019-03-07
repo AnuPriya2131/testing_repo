@@ -19,10 +19,10 @@
   tasks:
     - name: Deploy ARM template
       azure_rm_deployment:
-        subscription_id: 4ff8750b-e2fa-4db8-84c8-86abd50d3868
-        client_id: 226d0c4c-4b98-41e4-8ff0-0ef11d1e54f4
-        tenant: c160a942-c869-429f-8a96-f8c8296d57db
-        secret: qaEbeMNs2mNxacfqDrez24/TwVgQVyPKL8rjTtd0VA4=
+        subscription_id: "{{ hostSubscriptionId }}"
+        client_id: "{{ servicePrincipalId }}"
+        tenant: "{{ tenant }}"
+        secret: "{{ spkey }}"
         resource_group_name: sangam
         location: "eastus2"
         state: present
@@ -48,5 +48,5 @@
           resourcesgpname: 
             value: "{{ resourcesgpname }}"
           environment:
-            value: "Production"
+            value: "{{ environment }}"
         template_link: "https://raw.githubusercontent.com/sangaml/testing_repo/master/BigData/maindeploy.json"
