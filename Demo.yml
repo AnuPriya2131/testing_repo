@@ -48,5 +48,5 @@
           resourcesgpname: 
             value: "{{ resourcesgpname }}"
           environment:
-            value: "{{ production }}"
+            value: "Production"
         template_link: "https://raw.githubusercontent.com/sangaml/testing_repo/master/BigData/maindeploy.json"
